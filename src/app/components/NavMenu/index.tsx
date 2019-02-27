@@ -41,6 +41,9 @@ class NavMenu extends Component<{}, State> {
                             <NavItem>
                                 <NavLink tag={Link} to="/admin">Admin</NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} to="/login">Login</NavLink>
+                            </NavItem>
                         </Nav>
                     </Collapse>
                 </Navbar>

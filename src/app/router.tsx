@@ -12,10 +12,16 @@ const AdminRoute = Loadable({
     loading: () => null,
 });
 
+const LoginRoute = Loadable({
+    loader: () => import('./pages/Login'),
+    loading: () => null,
+});
+
 const AppRouter = () => {
   return (
       <div>
           <Route exact path="/" component={HomeRoute} />
+          <Route exact path="/login" component={LoginRoute} />
           <Route exact path="/admin" component={AdminRoute} />
       </div>
   )
