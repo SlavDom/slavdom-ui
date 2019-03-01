@@ -1,3 +1,4 @@
+import * as React from "react";
 import {Component, ReactNode} from "react";
 import { Formik, FormikActions } from 'formik';
 import LoginForm from "../../components/forms/login";
@@ -27,11 +28,14 @@ class Login extends Component {
 
     public render(): ReactNode {
         return (
-            <Formik
-                initialValues={this.initialValues}
-                onSubmit={this.onSubmit}
-                render={LoginForm}
-            />
+            <div>
+                <h3>Authenticate</h3>
+                <Formik
+                    initialValues={this.initialValues}
+                    onSubmit={this.onSubmit}
+                    render={LoginForm}
+                />
+            </div>
         );
     }
 }
