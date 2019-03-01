@@ -31,7 +31,7 @@ class NavMenu extends Component<{}, State> {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">SlavDom</NavbarBrand>
+                    <NavbarBrand tag={Link} to="/">SlavDom</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpened} navbar>
                         <Nav className="ml-auto" navbar>
