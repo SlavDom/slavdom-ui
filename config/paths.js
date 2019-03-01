@@ -9,7 +9,7 @@ const url = require('url');
 
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => process.env.BUILD_SOURCE === 'server'
-    ? path.resolve(appDirectory, 'main/webapp', relativePath)
+    ? path.resolve(appDirectory, 'src/main/webapp', relativePath)
     : path.resolve(appDirectory, relativePath);
 
 const envPublicUrl = process.env.PUBLIC_URL;
@@ -72,7 +72,7 @@ const resolveModule = (resolveFn, filePath) => {
 module.exports = {
   dotenv: resolveApp('.env'),
   appPath: resolveApp('.'),
-  appBuild: resolveApp(process.env.BUILD_SOURCE === 'server' ? '../../build/www' : 'build'),
+  appBuild: resolveApp(process.env.BUILD_SOURCE === 'server' ? '../../../build/www' : 'build'),
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
   appIndexJs: resolveModule(resolveApp, 'src/index'),
