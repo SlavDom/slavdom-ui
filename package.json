@@ -111,24 +111,19 @@
       "^.+\\.module\\.(css|sass|scss)$"
     ],
     "moduleNameMapper": {
-      "^react-native$": "react-native-web",
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
     },
     "moduleFileExtensions": [
-      "web.js",
       "js",
-      "web.ts",
       "ts",
-      "web.tsx",
       "tsx",
       "json",
-      "web.jsx",
       "jsx",
       "node"
     ],
     "watchPlugins": [
-      "C:\\Users\\eakar\\Documents\\slavdom-ui\\node_modules\\jest-watch-typeahead\\filename.js",
-      "C:\\Users\\eakar\\Documents\\slavdom-ui\\node_modules\\jest-watch-typeahead\\testname.js"
+      "node_modules/jest-watch-typeahead/filename.js",
+      "node_modules/jest-watch-typeahead/testname.js"
     ]
   },
   "babel": {
